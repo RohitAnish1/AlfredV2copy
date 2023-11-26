@@ -4,7 +4,7 @@ import DashLayout from 'Layout/DashLayout';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import UserState from 'Contexts/User/UserState';
 import { ApiState } from 'Contexts/Api/ApiState';
-
+import Certificate from 'Pages/Certificate';
 import Home from 'Pages/Home';
 import Contact from 'Pages/Contact';
 import NotFound from 'Pages/NotFound';
@@ -29,6 +29,7 @@ function App() {
 								<Route path='/' element={<Home />} />
 								<Route path='/users' element={<Users />} />
 								<Route path='/contact' element={<Contact />} />
+								<Route path='/Certificate' element={<Certificate />} />
 								<Route
 									path='/ca'
 									element={<Navigate to='/ca/list' />}

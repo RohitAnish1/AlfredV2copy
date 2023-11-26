@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
-
+import Certificate from 'Pages/Certificate';
 import { Outlet } from 'react-router-dom';
 import './DashLayout.css';
 import { Paper } from '@mui/material';
@@ -47,6 +47,7 @@ export default function DashLayout() {
 				/>
 				<Box className='dash-content'>
 					<Outlet />
+					<Certificate />
 				</Box>
 			</Box>
 		</Box>

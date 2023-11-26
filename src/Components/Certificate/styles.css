@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+.Certificate {
+  font-family: "Hachi Maru Pop", cursive;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.Meta {
+  flex-grow: 1;
+  padding-right: 15px;
+  text-align:left; /* Align text to center */
+}
+
+.Meta input {
+  font-family: inherit;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-top: 30px; /* Reduce margin-top to move text upwards */
+}
+
+.Meta button {
+  padding: 10px 15px;
+  border: 2px solid #87ceeb;
+  background-color: #33f3fb;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#downloadWrapper {
+  padding: 20px;
+}
+
+#certificateWrapper {
+  position: relative;
+  box-shadow: 0 0 5px #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#certificateWrapper img {
+  display: block;
+  max-width: 100%; /* Limit the width of the image */
+  max-height: 500px; /* Limit the height of the image */
+  object-fit: contain; /* Keep the image's aspect ratio */
+  border-radius: 10px;
+}
+
+.TextBox {
+  position: absolute;
+  font-family: "Staatliches", cursive;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  cursor: grab;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center; /* Align text to center */
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}

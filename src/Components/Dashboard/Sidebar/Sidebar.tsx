@@ -5,7 +5,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Collapse from '@mui/material/Collapse';
-
+import BorderColorIcon from '@mui/icons-material/BorderColor';
 import UserLoginAvatarButton from '../Login/UserLoginAvatarButton';
 
 import GroupIcon from '@mui/icons-material/Group';
@@ -128,6 +128,7 @@ export default function Sidebar() {
 					text='Contact'
 					icon={<ContactsOutlinedIcon />}
 				/>
+				
 			</List>
 
 			<Box sx={{ flexGrow: 1 }}></Box>
@@ -136,6 +137,17 @@ export default function Sidebar() {
 				userData={userData}
 				logout={logout}
 			/>
+			<List>
+        {/* Existing list items... */}
+
+        {/* Add a link/button for certificate generation */}
+        <ListItemLink
+          to='/generate-certificate'
+          text='Generate Certificate'
+          icon={<BorderColorIcon />}
+        />
+      </List>
+			
 		</Box>
 	);
 }
